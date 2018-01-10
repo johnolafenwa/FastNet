@@ -1,5 +1,5 @@
 # FastNet
-Official Repository for FastNet, An Efficient Convolutional Neural Network Architecture,  highly optimized for Smart Devices.
+Official Repository for FastNet, An Efficient Convolutional Neural Network Architecture,  highly optimized for Edge Devices and Mobile Applications.
 
 In light of the great need for intelligence at the edge of smart devices including SmartPhones, IoT devices, Smart Cameras and low cost drones, we have developed a new architecture that archieves high accuracy on standard datasets while being incredibly fast on both GPUs and CPUs.
 Recent Architectures have explored absolute depth, very great width and layer parallelization. We explictly avoid using any of these as they lead to models that can only be used on the cloud and are too slow and too large to be deployed on Smart Devices. We instead, make use of medium depth and medium width throughout the network and we greatly optimized the parameters of the network to archieve highly competetive accuracies at very low computational cost. Our architecture is also very simple and can be replicated by any ML engineer using any Deep Learning library.
@@ -16,7 +16,7 @@ Recent Architectures have explored absolute depth, very great width and layer pa
 
 Our architecture completes 200 training epochs in just three hours, despite we were using real-time data augmentation and saving the models at every epoch while we conducted our experiments. Our experiments were conducted using keras with Tensorflow backend, running on a NVIDIA P100.
 
-The scripts provided in this repository would complete 200 epochs is less than 3 hours, if run using the same environment.
+The scripts provided in this repository would complete 200 epochs is less than 3 hours, if run using the same environment. 
 
 
 

@@ -22,7 +22,7 @@ def UnitCell(x, channels, kernel_size=[3, 3], strides=(1, 1)):
     return y
 
 #The network
-def FastResNet(input_shape, num_classes=100):
+def FastNet(input_shape, num_classes=100):
     inputs = Input(input_shape)
 
     y = UnitCell(inputs, 64)
@@ -87,7 +87,7 @@ print('y_train shape:', y_train.shape)
 # Convert class vectors to binary class matrices.
 y_train = keras.utils.to_categorical(y_train, num_classes)
 y_test = keras.utils.to_categorical(y_test, num_classes)
-model = FastResNet(input_shape, num_classes=10)
+model = FastNet(input_shape, num_classes=10)
 
 save_direc = os.path.join(os.getcwd(), 'cifar10_saved_modelsbest')
 

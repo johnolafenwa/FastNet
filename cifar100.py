@@ -87,11 +87,11 @@ print('y_train shape:', y_train.shape)
 # Convert class vectors to binary class matrices.
 y_train = keras.utils.to_categorical(y_train, num_classes)
 y_test = keras.utils.to_categorical(y_test, num_classes)
-model = FastNet(input_shape, num_classes=10)
+model = FastNet(input_shape, num_classes=num_classes)
 
-save_direc = os.path.join(os.getcwd(), 'cifar10_saved_modelsbest')
+save_direc = os.path.join(os.getcwd(), 'cifar100_saved_modelsbest')
 
-model_name = 'cifar10_model.{epoch:03d}.h5'
+model_name = 'cifar100_model.{epoch:03d}.h5'
 if not os.path.isdir(save_direc):
     os.makedirs(save_direc)
 filepath = os.path.join(save_direc, model_name)
